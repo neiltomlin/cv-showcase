@@ -3,7 +3,7 @@ import userEvent from "@testing-library/user-event";
 
 import { useRouter } from "next/router";
 
-import Index from "..";
+import Index from "../pages";
 import { customRender } from "@/test-utils";
 
 jest.mock("next/router", () => ({
