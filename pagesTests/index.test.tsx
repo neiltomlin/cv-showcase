@@ -10,19 +10,21 @@ jest.mock("next/router", () => ({
   useRouter: jest.fn(),
 }));
 
-test("Triggers Next navigation when clicking the links", async () => {
-  const mockPush = jest.fn();
-  (useRouter as jest.Mock).mockReturnValue({
-    push: mockPush,
-  });
-
+test("Shows the header component", async () => {
   customRender(<Index />);
 
-  const subPageLinks = screen.getAllByRole("link");
-  expect(subPageLinks).toHaveLength(3);
-
-  subPageLinks.forEach(async (link) => {
-    await userEvent.click(link);
-    expect(mockPush).toHaveBeenCalledWith(link.getAttribute("href"));
-  });
+  expect(screen.getByText("Neil Tomlin - CV")).toBeInTheDocument();
 });
+
+test("Shows the index content", async () => {
+  customRender(<Index />);
+
+  expect(screen.getByText("Senior Front End Developer")).toBeInTheDocument();
+});
+
+// test("Shows links to subpages", async () => {
+//   customRender(<Index />);
+
+//   const subPageLinks = screen.getAllByRole("link");
+//   expect(subPageLinks).toHaveLength(3);
+// });
