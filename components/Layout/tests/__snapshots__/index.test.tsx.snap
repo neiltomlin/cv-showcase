@@ -3,16 +3,24 @@
 exports[`Looks like it should do 1`] = `
 <DocumentFragment>
   <header
-    class="sc-bRKDuR iXvCGl"
+    class="sc-bRKDuR kUfCqD"
   >
     <div
-      class="sc-hvigdm iJxhjp"
+      class="sc-hvigdm kJZGKO"
     >
-      <p>
+      <a
+        class="sc-dTvVRJ eyTQkP"
+        href="#main"
+      >
+        Skip to main content
+      </a>
+      <a
+        href="/"
+      >
         Neil Tomlin - CV
-      </p>
+      </a>
       <div
-        class="sc-fhHczv jklWMR"
+        class="sc-fhHczv iRcZnd"
       >
         <a
           href="mailto:neiltomlin88@gmail.com"
@@ -28,7 +36,7 @@ exports[`Looks like it should do 1`] = `
           class="sc-ggWZvA eCNiYi"
         >
           <a
-            href="https://www.linkedin.com/in/neil-tomlin-5b2b62129/"
+            href="www.linkedin.com/in/neil-tomlin"
           >
             <img
               alt="LinkedIn"
@@ -61,8 +69,37 @@ exports[`Looks like it should do 1`] = `
       </div>
     </div>
   </header>
+  <div
+    class="sc-jwTyAe fcnNLQ"
+  >
+    <div
+      class="sc-hjsuWn ghDavz"
+    >
+      <div
+        class="sc-jJLAfE jPTkuf"
+      >
+        <p>
+          Site under construction
+        </p>
+        <img
+          alt="Image showing a website being built"
+          data-nimg="1"
+          decoding="async"
+          height="40"
+          loading="lazy"
+          src="/_next/image?url=%2Fimg.jpg&w=96&q=75"
+          srcset="/_next/image?url=%2Fimg.jpg&w=48&q=75 1x, /_next/image?url=%2Fimg.jpg&w=96&q=75 2x"
+          style="color: transparent;"
+          width="40"
+        />
+      </div>
+      <button>
+        Close
+      </button>
+    </div>
+  </div>
   <main
-    class="sc-dTvVRJ gnMlgX"
+    class="sc-hwkwBN dQZWHR"
   >
     <div>
       Test Content

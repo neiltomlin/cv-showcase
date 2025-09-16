@@ -1,15 +1,21 @@
-import Image from "next/image";
 import Link from "next/link";
-import CraneImage from "./assets/crane-construction.svg";
+import { PageTitle } from "./styles";
 
 export const IndexContent = () => {
   return (
-    <>
+    <div id="main" data-testid="main">
+      <PageTitle>Senior Front End Developer</PageTitle>
       <div>
-        <h1>Senior Front End Developer</h1>
-      </div>
-      <div>
-        <p>Thank you for taking the time to view my CV showcase</p>
+        <p>Thank you for taking the time to view my CV showcase.</p>
+        <p>
+          This is a basic CSR NextJS app using their pages router. I have
+          created this with the intention of showcasing my CV in web format
+          using FE tech I am highly experienced in.
+        </p>
+        <p>
+          My future plans to enhance this are to create an SSR app routed NextJS
+          FE with Tailwind instead of Styled Components.
+        </p>
         <ul>
           <li>
             <Link href="/education">Education</Link>
@@ -21,16 +27,7 @@ export const IndexContent = () => {
             <Link href="/skills">Skills</Link>
           </li>
         </ul>
-
-        <p>This is a simple CV showcase built with Next.js and TypeScript.</p>
-        <p>I'm still working on it!</p>
-        <Image
-          src={CraneImage}
-          alt="Image showing a website being built"
-          width={200}
-          height={200}
-        />
       </div>
-    </>
+    </div>
   );
 };

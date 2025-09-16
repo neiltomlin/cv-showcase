@@ -13,7 +13,7 @@ test("Shows the index content", async () => {
   expect(screen.getByText("Senior Front End Developer")).toBeInTheDocument();
 });
 
-test("Shows links to subpages", async () => {
+test("Shows links to subpages", () => {
   customRender(<IndexContent />);
 
   const subPageLinks = screen.getAllByRole("link");

@@ -18,7 +18,7 @@ test("Shows the Header and children", async () => {
   expect(screen.getByText("Test Content")).toBeInTheDocument();
 });
 
-test("Looks like it should do", async () => {
+test("Looks like it should do", () => {
   const { asFragment } = customRender(
     <Layout>
       <div>Test Content</div>
